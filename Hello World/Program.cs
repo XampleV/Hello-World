@@ -7,6 +7,7 @@ namespace Hello_World
         static void Main(string[] args)
         {
             helloWorldHomework();
+            dataTypesCC();
         }
         static void helloWorldHomework()
         {
@@ -35,6 +36,29 @@ namespace Hello_World
             // Find the larger number between numberOne and numberTwo
             Console.WriteLine(Math.Max(numberOne, numberTwo));
 
+        }
+        static void workingWithText()
+        {
+            {
+                // Script line
+                string script = "Close on a portrait of the HANDSOME PRINCE -- as the BEAST'S giant paw slashes it.";
+
+                // Get camera directions
+                int charPosition = script.IndexOf("Close");
+                int length = "Close on".Length;
+                string cameraDirections = script.Substring(charPosition, length);
+                Console.WriteLine(cameraDirections);
+
+                // Get scene description
+                charPosition = script.IndexOf("a portrait");
+                string sceneDescription = script.Substring(charPosition);
+
+                // Make camera directions uppercase
+                cameraDirections = cameraDirections.ToUpper();
+                sceneDescription = sceneDescription.ToLower();
+
+
+            }
         }
     }
 }
