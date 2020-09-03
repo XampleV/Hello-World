@@ -6,8 +6,13 @@ namespace Hello_World
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            // test 2
+            helloWorldHomework();
+        }
+        static void helloWorldHomework()
+        {
+            Console.WriteLine("Hello there\nwhat are you doing?");
+            string userAnswer = Console.ReadLine();
+            Console.WriteLine($"That's cool.. You said: '{ userAnswer}'");
         }
     }
 }
